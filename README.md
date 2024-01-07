@@ -3,7 +3,7 @@
 
 ## 專案說明
 - 本資料集由<a href="https://www.twreporter.org/">《報導者》</a>數據新聞小組整理，原始資料取自<a href="">立法院開放資料服務平台</a>，透過公民科技社群G0V工程師王向榮建置的<a href="">立院資料API</a>抓取而得。
-- 本資料使用於報導者選舉專題<a href="https://www.twreporter.org/a/data-reporter-2024-election-legislators-performance">【Data Reporter】你家立委4年來為哪些議題發聲？各黨立委質詢主題有何差異？馬上查閱每位立委5大關注議題</a>。
+- 本資料使用於報導者選舉專題<a href="https://www.twreporter.org/a/data-reporter-2024-election-10th-legislators-performance">【Data Reporter】你家立委4年來為哪些議題發聲？各黨立委質詢主題有何差異？馬上查閱每位立委5大關注議題</a>。
 
 ## 研究方法概述
 

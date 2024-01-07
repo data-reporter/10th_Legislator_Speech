@@ -23,7 +23,7 @@
   
 - Jieba套件的詞庫僅包含通用詞彙，因此我們以立委姓名、立法院動態資訊網法案追蹤平台彙整的<a href="https://lis.ly.gov.tw/billtpc/billtp">熱門議題</a>為基底，新增專業用語斷詞，檢查斷詞結果，來回調整斷詞清單及實際上無意義的停用詞，最後彙整出<a href="https://github.com/data-reporter/10th_Legislator_Speech/blob/main/2_special_words_zhTW.txt">1,130個專業用語</a>、<a href="https://github.com/data-reporter/10th_Legislator_Speech/blob/main/3_stopwords_zhTW.txt">4,783個停用詞清單</a>。
   
-- 參考中研院人文社會科學研究中心博士後研究員何俊霆開源的<a href="https://github.com/justinchuntingho/Academia-Sinica-Topic-Modeling/blob/master/2_topicmodel.R">LDA主題模型（隱含狄利克雷分布）程式碼</a>，依照團隊需求進行數十次微調與修改，並使用在主題模型研究領域中常見的最佳主題數計算方法「<a href="https://doi.org/10.1016/j.neucom.2008.06.011">CaoJuan2009</a>」及「<a href="https://www.researchgate.net/publication/220895601_On_Finding_the_Natural_Number_of_Topics_with_Latent_Dirichlet_Allocation_Some_Observations">Arun2010>/a>」統計出最合適的主題數為200個。
+- 參考中研院人文社會科學研究中心博士後研究員何俊霆開源的<a href="https://github.com/justinchuntingho/Academia-Sinica-Topic-Modeling/blob/master/2_topicmodel.R">LDA主題模型（隱含狄利克雷分布）程式碼</a>，依照團隊需求進行數十次微調與修改，並使用在主題模型研究領域中常見的最佳主題數計算方法「<a href="https://doi.org/10.1016/j.neucom.2008.06.011">CaoJuan2009</a>」及「<a href="https://www.researchgate.net/publication/220895601_On_Finding_the_Natural_Number_of_Topics_with_Latent_Dirichlet_Allocation_Some_Observations">Arun2010</a>」統計出最合適的主題數為200個。
   
 - 模型根據所有資料分出200個主題後，會計算出每個主題的重點關鍵字，並根據每段發言內容，為其打上200個主題的分數（分數在0至1之間，愈高代表在該主題愈有代表性），此分數代表發言與特定主題的相關程度。例如：某發言與主題1的相關程度是0.53分、與主題2的相關程度是0.62分，我們會認為這段發言更多在討論主題2，藉此對大量文本進行快速分類與理解。
 

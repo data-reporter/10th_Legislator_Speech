@@ -2,16 +2,16 @@
 2024.1.4
 
 ## 專案說明
-- 本資料集由<a href="https://www.twreporter.org/">《報導者》</a>數據新聞小組整理，原始資料取自<a href="">立法院開放資料服務平台</a>，透過公民科技社群G0V工程師王向榮建置的<a href="">立院資料API</a>抓取而得。
+- 本資料集由<a href="https://www.twreporter.org/">《報導者》</a>數據新聞小組整理，原始資料取自<a href="https://data.ly.gov.tw/getds.action?id=41">立法院開放資料服務平台</a>，透過公民科技社群G0V工程師王向榮建置的<a href="">立院資料API</a>抓取而得。
 - 本資料使用於報導者選舉專題<a href="https://www.twreporter.org/a/data-reporter-2024-election-10th-legislators-performance">【Data Reporter】你家立委4年來為哪些議題發聲？各黨立委質詢主題有何差異？馬上查閱每位立委5大關注議題</a>。
 
-資料範圍：立法院第1會期至第2會期
+資料範圍：立法院第1會期至第7會期
 
 這裡的檔案包含：
-- **1_split_speeches.zip**: 包含立法院第1會期至第7會期的立委發言資料，包含立委姓名、
-- **2_special_words_zhTW.txt**: 包含與共機活動有關的原始報告pdf檔，以及經《報導者》批量轉存的地圖png檔。
-- **3_stopwords_zhTW.txt**: 同上，為共艦活動報告資料。
-- **4_topics.csv**: 可透過儀表板探索資料。
+- **1_split_speeches.zip**: 包含立法院第1會期至第7會期的立委發言資料，包含立委姓名（name）、公報檔案編號（file）、整併後的發言內容（content）。
+- **2_special_words_zhTW.txt**: 斷詞用，包含近年熱門議題名稱、法案專業用語、政治名詞等。
+- **3_stopwords_zhTW.txt**: 斷詞用，包含機器斷詞後，人工觀察確認無意義的名詞。
+- **4_topics.csv**: 178個議題清單。
 
 ## 研究方法概述
 
